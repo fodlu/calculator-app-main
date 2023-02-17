@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 0;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="up">
+        <h4 class="font">calc</h4>
+        <div class="theme">
+          <h4 class="font">THEME</h4>
+
+          <div class="themes">
+            <form>
+              <label for="a" class="font" id="a" name="theme">1</label>
+              <label for="b" id="b" class="font" name="theme">2</label>
+              <label for="c" id="c" class="font" name="theme">3</label>
+              <div class="inpCol">
+                <input
+                  type="radio"
+                  name="theme"
+                  id="theme0"
+                  value="0"
+                  checked />
+                <input type="radio" name="theme" id="theme1" value="1" />
+                <input type="radio" name="theme" id="theme2" value="2" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="calcInput">
+        <form>
+          <input type="text" value="" class="number inpCol font" />
+        </form>
+      </div>
+
+      <div class="inputKeys">
+        <input type="button" value="7" class="btns btn" />
+        <input type="button" value="8" class="btns btn" />
+        <input type="button" value="9" class="btns btn" />
+        <input type="button" value="DEL" class="btn del clr" />
+        <input type="button" value="4" class="btns btn" />
+        <input type="button" value="5" class="btns btn" />
+        <input type="button" value="6" class="btns btn" />
+        <input type="button" value="+" class="btns btn" />
+        <input type="button" value="1" class="btns btn" />
+        <input type="button" value="2" class="btns btn" />
+        <input type="button" value="3" class="btns btn" />
+        <input type="button" value="-" class="btns btn" />
+        <input type="button" value="." class="btns btn" />
+        <input type="button" value="0" class="btns btn" />
+        <input type="button" value="/" class="btns btn" />
+        <input type="button" value="*" class="btns btn" />
+        <input type="button" value="RESET" class="btn reset clr" />
+        <input type="button" value="=" class="btn equal" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/fodlu">Musediq Fadilulahi fodlu_dev</a>.
+    </div>
+  </body>
+</html>

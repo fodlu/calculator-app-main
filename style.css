@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.container {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.up .theme {
+  display: flex;
+  align-items: center;
+}
+
+.up .theme h4 {
+  padding-right: 12px;
+  font-size: 10px;
+}
+
+.up .theme .themes label {
+  padding-right: 6px;
+}
+
+.up .theme .themes .inpCol {
+  background-color: hsl(224, 36%, 15%);
+  height: fit-content;
+  padding: 1px;
+  border-radius: 15px;
+  width: 55px;
+  text-align: center;
+}
+
+.up .theme .themes div #theme0,
+.up .theme .themes div #theme1,
+.up .theme .themes div #theme2 {
+  transition: 0.5;
+  appearance: none;
+  border: none;
+  width: 12px;
+  height: 12px;
+  transition: 0.5s;
+}
+
+.up .theme .themes div #theme0:checked,
+.up .theme .themes div #theme1:checked,
+.up .theme .themes div #theme2:checked {
+  background-color: hsl(6, 63%, 50%);
+  border-radius: 50%;
+}
+
+.number {
+  width: 100%;
+  border-radius: 5px;
+  background-color: hsl(224, 36%, 15%);
+  color: white;
+  border: none;
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  text-align: right;
+  padding: 15px;
+}
+
+.inputKeys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "reset reset equal equal";
+  padding: 15px;
+  gap: 15px;
+  border-radius: 5px;
+  background-color: hsl(223, 31%, 20%);
+  overflow: hidden;
+}
+
+.btn {
+  background-color: hsl(30, 25%, 89%);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 3px hsl(224, 28%, 35%);
+  font-size: 35px;
+  font-weight: 700;
+  color: hsl(221, 14%, 31%);
+}
+
+.btn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.reset,
+.del {
+  background-color: hsl(225, 21%, 49%);
+  color: white;
+  font-size: 20px;
+}
+
+.reset {
+  grid-area: reset;
+  height: 50px;
+  box-shadow: 2px 2px 4px hsl(225, 21%, 49%);
+}
+
+.reset:hover,
+.del:hover {
+  background-color: hsl(224, 18%, 80%);
+}
+
+.equal:hover {
+  background-color: hsl(6, 66%, 74%);
+}
+
+.equal {
+  grid-area: equal;
+  height: 50px;
+  box-shadow: 2px 2px 4px hsl(6, 70%, 34%);
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: block;
+  }
+
+  .container {
+    margin: 100px auto;
+    height: 500px;
+  }
+}
